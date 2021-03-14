@@ -41,10 +41,11 @@ x2poub=x2*2;
 //playsnd(x1poub)
 sleep(500)
 playsnd(x1)
-sleep(500)
-playsnd(x1poub)
+//sleep(500)
+//playsnd(x1poub)
 
 sleep(1000)
 
-playsnd(b2) ; sleep(500) ; playsnd(x2) ; sleep(500) ; playsnd(x2poub)
+//playsnd(b2) ; sleep(500) ; playsnd(x2) ; sleep(500) ; playsnd(x2poub)
 
+//TODO add max matrix window adds
