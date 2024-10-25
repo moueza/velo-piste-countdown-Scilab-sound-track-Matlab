@@ -3,7 +3,7 @@
 //p59 119
 
  //+++++++++ full pathname
- b1 = fullfile( '/home/peter/POUB/velo-piste-countdown-Scilab-sound-track-Matlab/D.wav');
+ b1 = fullfile(get_absolute_file_path(), 'D.wav');
  
  //relative
  //b1 = wavread( 'D.wav');
