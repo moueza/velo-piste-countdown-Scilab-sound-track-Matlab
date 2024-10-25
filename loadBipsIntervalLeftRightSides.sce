@@ -10,11 +10,30 @@ b2 = fullfile( '/home/peter/POUB/velo-piste-countdown-Scilab-sound-track-Matlab/
 
 all= fullfile( '/home/peter/POUB/velo-piste-countdown-Scilab-sound-track-Matlab/audacityPisteCountdownEXTRACT16bitsPCM.wav');
 
- defaultt = 22050;
+startSecond=0;
+endSecond=2;
+
+sampleRate = 2*22050;
+
+startIndex= startSecond*sampleRate+1;
+endIndex=endSecond *sampleRate+1;
+disp("endIndex :") 
+disp(endIndex)
+
 //[x,y]=loadwave(filename);
 x1=loadwave(b1);
 x2=loadwave(b2);
 xall=loadwave(all);
+
+x1Int=x1(startIndex:endIndex);
+//x2Int=x2(startIndex:endIndex);
+
+disp("xall size :") 
+disp(size(xall))
+xallInt=xall(startIndex:endIndex);
+
+disp("xallInt size :") 
+disp(size(xallInt))
 //sound(x/2)
 //sounseq
 //drawnow()
@@ -25,8 +44,8 @@ xall=loadwave(all);
 //sleep(1000)
 //playsnd(b2)
 //sleep(1000)
-//playsnd(xall,2*defaultt,1)KO
-/////////////////playsnd(xall,2*defaultt,1)
+//playsnd(xall,2*sampleRate,1)KO
+/////////////////playsnd(xall,2*sampleRate,1)
 
 //sleep(1000)
 //playsnd(b1);sleep(500);playsnd(b1);sleep(500);playsnd(b2)
@@ -54,11 +73,11 @@ sleep(500)
 disp("xall deb")
 xall(:,1)
 //xall
-xallLeft=xall;
+xallLeft=xallInt;//xall;
 xallLeft(2,:)=0;
-playsnd(xallLeft,2*defaultt,1)
+playsnd(xallLeft,sampleRate,1)
 //xallLeft(1,1)
 
-xallRight=xall;
-xallRight(1,:)=0;
-playsnd(xallRight,2*defaultt,1)
+///xallRight=xall;
+//xallRight(1,:)=0;
+//playsnd(xallRight,sampleRate,1)
