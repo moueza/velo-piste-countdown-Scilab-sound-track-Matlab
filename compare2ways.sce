@@ -3,9 +3,9 @@
 //filename = fullfile( 'time_series_2019-ncov-Confirmed.csv');
 //DEPRECATED  src file
 //p59 119
-b1 = fullfile( '/home/peter/POUB/velo-piste-countdown-Scilab-sound-track-Matlab/b1.wav');
+b1 = fullfile(get_absolute_file_path(), 'b1.wav');
 
-b2 = fullfile( '/home/peter/POUB/velo-piste-countdown-Scilab-sound-track-Matlab/b2.wav');
+b2 = fullfile(get_absolute_file_path(), 'b2.wav');
 
 
 //[x,y]=loadwave(filename);
