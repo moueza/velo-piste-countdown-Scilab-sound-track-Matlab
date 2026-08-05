@@ -1,8 +1,9 @@
+clc
 //from https://youtu.be/sUudVY6gDew
 //filename = fullfile( 'D:\Telecharg\time_series_2019-ncov-Confirmed.csv');
 //filename = fullfile( 'time_series_2019-ncov-Confirmed.csv');
 //DEPRECATED  src file
-//p59 119
+//p5 9 119
 //ch help loadwave
 b1 = fullfile( '/home/peter/POUB/velo-piste-countdown-Scilab-sound-track-Matlab/b1.wav');
 
@@ -30,8 +31,8 @@ playsnd(b2)
 
 //duree size(x1)(1,2) 47128.
 //x1 mat lign ~ hor x1(1,3)
-disp(size(x1)(1,2)/44100) 
-disp(size(x2)(1,2)/44100) 
+disp("size(x1)(1,2)/44100 :",size(x1)(1,2)/44100) 
+disp("size(x2)(1,2)/44100",size(x2)(1,2)/44100) 
 
 //max(x1(1,:))
 //0.0806885
@@ -41,4 +42,6 @@ x2poub=x2*2;
 //playsnd(x1poub)
 sleep(500)
 //playsnd(x2poub)
-
+xS=[x1 x1]
+disp("xS : ", size(xS)/44100) 
+//bS=[]
