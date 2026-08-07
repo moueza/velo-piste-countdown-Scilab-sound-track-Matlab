@@ -4,11 +4,11 @@
 //DEPRECATED  src file
 //p59 119
 
-b1 = fullfile( '/home/peter/POUB/velo-piste-countdown-Scilab-sound-track-Matlab/b1.wav');
+b1 = fullfile(get_absolute_file_path(), 'b1.wav');
 
-b2 = fullfile( '/home/peter/POUB/velo-piste-countdown-Scilab-sound-track-Matlab/b2.wav');
+b2 = fullfile(get_absolute_file_path(), 'b2.wav');
 
-all= fullfile( '/home/peter/POUB/velo-piste-countdown-Scilab-sound-track-Matlab/audacityPisteCountdownEXTRACT16bitsPCM.wav');
+all= fullfile(get_absolute_file_path(), 'audacityPisteCountdownEXTRACT16bitsPCM.wav');
 
 startSecond=0;
 endSecond=2;

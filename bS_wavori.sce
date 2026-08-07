@@ -5,9 +5,9 @@ clc
 //DEPRECATED  src file
 //p5 9 119
 //ch help loadwave
-b1 = fullfile( '/home/peter/POUB/velo-piste-countdown-Scilab-sound-track-Matlab/b1.wav');
+b1 = fullfile(get_absolute_file_path(), 'b1.wav');
 
-b2 = fullfile( '/home/peter/POUB/velo-piste-countdown-Scilab-sound-track-Matlab/b2.wav');
+b2 = fullfile(get_absolute_file_path(), 'b2.wav');
 
  
 //[x,y]=loadwave(filename);
